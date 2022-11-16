@@ -32,8 +32,14 @@ case $_distro in
     *manjaro*)               ICON="";;
     *rhel*)                  ICON="";;
     *macos*)                 ICON="";;
-    pop)                   ICON="";;
+    *pop*)                   ICON="";;
     *)                       ICON="";;
 esac
 
+case $_distro in
+    *macos*)                 CURRENTOS="macos";;
+    *)                       CURRENTOS="linux";;
+esac
+
 export STARSHIP_DISTRO="$ICON"
+export STARSHIP_CURRENTOS="$CURRENTOS"
