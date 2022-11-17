@@ -34,8 +34,11 @@ cd ~/dotfiles # Go to dotfiles directory
 stow */ # Create all symlinks
 ```
 
-### 3) Change the font if you don't use CaskaydiaCove
+### 3) Install all tmux plugins from TPM
+
+Check your current modifier for tmux, but since mine is `Ctrl` + `A`, then, on a tmux window, press: `Ctrl` + `A` + `Shift` + `I`
+
+### 4) Change the font if you don't use CaskaydiaCove
 
 Head over to `~/dotfiles/alacritty/.config/alacritty/alacritty.yml` and change the `font` to whichever you like most
-
 
