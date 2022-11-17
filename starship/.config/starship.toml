@@ -35,13 +35,13 @@ disabled = false
 style_user = "white"
 style_root = "white"
 format = "[$user]($style) "
-disabled = false
-show_always = true
+disabled = true
+show_always = false
 
 [hostname]
 ssh_only = false
 format = "on [$hostname](bold yellow) "
-disabled = false
+disabled = true
 
 [directory]
 truncation_length = 0
@@ -73,10 +73,12 @@ staged = '[++\($count\)](green)'
 renamed = "襁 "
 deleted = " "
 
-# [kubernetes]
-# format = 'via [ﴱ $context\($namespace\)](bold purple) '
-# disabled = false
+[kubernetes]
+format = 'via [ﴱ $context\($namespace\)](bold purple) '
+disabled = false
 
+[gcloud]
+disabled = true
 # (deactivated because of no space left)
 # 
 # [terraform]
@@ -111,3 +113,8 @@ disabled = true
 [java]
 symbol = "🌟 "
 
+#[gcloud]
+#disabled = true
+
+[aws]
+disabled = true

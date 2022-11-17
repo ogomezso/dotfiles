@@ -73,7 +73,16 @@ key_bindings:
   # - { key: Add, mods: Control, action: IncreaseFontSize }
   # - { key: Subtract, mods: Control, action: DecreaseFontSize }
   # - { key: N, mods: Control, action: SpawnNewInstance }
-
+  # Spanish keyboard bindings
+  - { key: 10,        mods: Alt,    chars: "\\" } # barra invertida `\`
+  - { key: 18,        mods: Alt,    chars: "|" } # barra vertical `|`
+  - { key: Key2,      mods: Alt,    chars: "@" } # arroba `@`
+  - { key: Key3,      mods: Alt,    chars: "#" } # almohadilla/cardinalidad `#`
+  - { key: Key6,      mods: Alt,    chars: "¬" } # negación en lógica `¬`
+  - { key: 39,        mods: Alt,    chars: "{" } # abre llaves `{`
+  - { key: 42,        mods: Alt,    chars: "}" } # cierra llaves `}`
+  - { key: 33,        mods: Alt,    chars: "[" } # abre corchetes `[`
+  - { key: 30,        mods: Alt,    chars: "]" } # cierra corchetes `]`
 import:
   # - ~/.config/alacritty/themes/chistianlempa.yml
   - ~/.config/alacritty/themes/base16.yml

@@ -6,6 +6,7 @@ alias dofi="cd ~/dotfiles && nvim"
 # ALIAS COMMANDS
 alias ls="exa --icons --group-directories-first"
 alias ll="exa --icons --group-directories-first -l"
+alias la="exa --icons --group-directories-first -la"
 
 alias grep='grep --color'
 
@@ -62,7 +63,7 @@ alias gapa='git add --patch'
 
 alias gb='git branch'
 alias gba='git branch -a'
-alias gbda='git branch --merged | command grep -vE "^(\*|\s*master\s*$)" | command xargs -n 1 git branch -d'
+alias gbda='git branch --merged | command grep -vE "^(\*|\s*main\s*$)" | command xargs -n 1 git branch -d'
 alias gbl='git blame -b -w'
 alias gbnm='git branch --no-merged'
 alias gbr='git branch --remote'
@@ -83,7 +84,7 @@ alias gcf='git config --list'
 alias gcl='git clone --recursive'
 alias gclean='git clean -fd'
 alias gpristine='git reset --hard && git clean -dfx'
-alias gcm='git checkout master'
+alias gcm='git checkout main'
 alias gcmsg='git commit -m'
 alias gco='git checkout'
 alias gcount='git shortlog -sn'
@@ -129,10 +130,10 @@ alias glp="_git_log_prettily"
 compdef _git glp=git-log
 
 alias gm='git merge'
-alias gmom='git merge origin/master'
+alias gmom='git merge origin/main'
 alias gmt='git mergetool --no-prompt'
 alias gmtvim='git mergetool --no-prompt --tool=vimdiff'
-alias gmum='git merge upstream/master'
+alias gmum='git merge upstream/main'
 
 alias gp='git push'
 alias gpd='git push --dry-run'
@@ -192,3 +193,43 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 
 # Homebrew
 alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
+
+# NVIM
+alias v='nvim'
+alias vim='nvim'
+alias vi='nvim'
+
+# Python
+alias python="python3"
+
+# Kubernetes
+alias k="kubectl"
+alias kn="kubens"
+alias kx="kubectx"
+alias kp="kubectl get pods -o wide"
+alias ke="kubectl get events --sort-by='.metadata.creationTimestamp'"
+alias ka="kubectl apply -f"
+alias kd="kubectl delete -f"
+alias kg="kubectl get"
+
+
+# Docker Alias
+alias d="docker"
+alias dc="docker compose"
+alias dcup="docker compose up -d"
+alias dcdown="docker compose down"
+alias dcps="docker compose ps"
+
+dckill() {
+  docker rm -f $(docker ps -a -q)
+}
+
+dikill() {
+  docker rmi -f $(docker images)
+}
+
+dckillemall() {
+  dckill
+  dikill 
+  docker volume prune
+}
