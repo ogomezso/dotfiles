@@ -6,6 +6,7 @@ alias dofi="cd ~/dotfiles && nvim"
 # ALIAS COMMANDS
 alias ls="exa --icons --group-directories-first"
 alias ll="exa --icons --group-directories-first -l"
+alias la="exa --icons --group-directories-first -la"
 
 alias grep='grep --color'
 
@@ -23,7 +24,7 @@ fi
 # PS
 alias psa="ps aux"
 alias psg="ps aux | grep "
-alias psr='ps aux | grep ruby'
+alias psj='ps aux | grep java'
 
 # Moving around
 alias cdb='cd -'
@@ -34,7 +35,7 @@ alias df='df -h'
 alias du='du -h -d 2'
 
 # show me files matching "ls grep"
-alias lsg='ll | grep'
+alias lsg='la | grep'
 
 # mimic vim functions
 alias :q='exit'
