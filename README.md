@@ -7,7 +7,7 @@ Juanlu's personal dotfiles for Linux and MacOS, based on GNU Stow
 ### Programs
 
 | Program | Why |
-| ======= | === |
+| ------- | --- |
 | [Stow](https://www.gnu.org/software/stow/)    | Creates symlinks for all configurations |
 | Git | Version control |
 | Zsh | My shell of choice |
