@@ -6,13 +6,17 @@ Juanlu's personal dotfiles for Linux and MacOS, based on GNU Stow
 
 ### Programs
 
-- Stow
-- Git
-- Zsh
-- [Zap](https://github.com/zap-zsh/zap) (plugin manager for ZSH)
-- Tmux
-- [TPM](https://github.com/tmux-plugins/tpm) (plugin manager for tmux)
-- [Starship](https://starship.rs/guide/#%F0%9F%9A%80-installation) (Cross-shell prompt)
+| Program | Why |
+| ======= | === |
+| [Stow](https://www.gnu.org/software/stow/)    | Creates symlinks for all configurations |
+| Git | Version control |
+| Zsh | My shell of choice |
+| [Zap](https://github.com/zap-zsh/zap) | plugin manager for ZSH |
+| [Tmux](https://github.com/tmux/tmux) | Multiple terminal tabs, spaces and more! |
+| [TPM](https://github.com/tmux-plugins/tpm) | Plugin manager for tmux |
+| [Starship](https://starship.rs/guide/#%F0%9F%9A%80-installation) | Cross-shell prompt |
+| [fzf](https://github.com/junegunn/fzf) | Ultra fast command line fuzzy finder |
+
 
 ### Fonts
 
