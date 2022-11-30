@@ -55,7 +55,6 @@ return {
 			"theHamsta/nvim-dap-virtual-text",
 			"rcarriga/nvim-dap-ui",
 			"mfussenegger/nvim-dap-python",
-			"mfussenegger/nvim-jdtls",
 			"nvim-telescope/telescope-dap.nvim",
 			{ "leoluz/nvim-dap-go", module = "dap-go" },
 			{ "jbyuki/one-small-step-for-vimkind", module = "osv" },

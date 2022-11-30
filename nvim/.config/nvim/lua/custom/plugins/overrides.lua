@@ -26,7 +26,6 @@ M.mason = {
     "deno",
     "clang-format",
     "ktlint",
-    "jdtls",
 
     -- Debuggers
     "delve", -- Golang
