@@ -8,3 +8,4 @@ SAVEHIST=$HISTSIZE
 # Load Starship
 eval "$(starship init zsh)"
 [ -f "$HOME/.local/share/zap/zap.zsh" ] && source "$HOME/.local/share/zap/zap.zsh"
+
