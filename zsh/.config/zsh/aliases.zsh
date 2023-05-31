@@ -193,3 +193,43 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 
 # Homebrew
 alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
+
+# NVIM
+alias v='nvim'
+alias vim='nvim'
+alias vi='nvim'
+
+# Python
+alias python="python3"
+
+# Kubernetes
+alias k="kubectl"
+alias kn="kubens"
+alias kx="kubectx"
+alias kp="kubectl get pods -o wide"
+alias ke="kubectl get events --sort-by='.metadata.creationTimestamp'"
+alias ka="kubectl apply -f"
+alias kd="kubectl delete -f"
+alias kg="kubectl get"
+
+
+# Docker Alias
+alias d="docker"
+alias dc="docker compose"
+alias dcup="docker compose up -d"
+alias dcdown="docker compose down"
+alias dcps="docker compose ps"
+
+dckill() {
+  docker rm -f $(docker ps -a -q)
+}
+
+dikill() {
+  docker rmi -f $(docker images)
+}
+
+dckillemall() {
+  dckill
+  dikill 
+  docker volume prune
+}
