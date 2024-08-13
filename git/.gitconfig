@@ -128,3 +128,6 @@
 [include]
   path = .gitconfig.user
 
+[user]
+	email = ogomezso0@github.com
+	name = Oscar Gómez Soriano
